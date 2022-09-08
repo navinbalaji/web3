@@ -1,0 +1,37 @@
+.outerContainer {
+  width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 0 30px;
+}
+.widget {
+  width: 15rem;
+  height: 8rem;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.customButton {
+  width: 100vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .outerContainer {
+    width: 400px !important;
+    margin-top: 50px !important;
+  }
+  .widget {
+    right: 0 !important;
+  }
+}

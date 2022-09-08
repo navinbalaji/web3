@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# WEB3 
+## _Installation_
+- git clone [Link text Here](https://github.com/navinbalaji/web3)
+- Run npm install
+- Run npm start
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+## Features
 
-## Available Scripts
+- In the dashboard page it will list down the upcomming calender events
+- In the stats page in the top right side widget will show you the last 5 transaction of your wallet address in the metamask extension
+- In the bottom right side widget will show the etherium latest block height and it will refresh every 3000 millisecons
 
-In the project directory, you can run:
+## Libraries used
+- @reduxjs/toolkit
+- react-google-calendar-api (https://www.npmjs.com/package/react-google-calendar-api)
+- react-router-dom
+- @mui/material
+- @mui/icons-material
 
-### `npm start`
+## Working
+  - Dashboard
+        In the dashboard page a google signin option would be there we need to click and the allow and authorize the calender permissions and the click on the list all events button to list you upcomming calender events
+        (The react-google-calendar-api i had looked that its a pretty decent downloads and active i checked on that there is no mallware to send the events to the third part server . It just create a script tag and inject the CDN in the HTML head)
+   - Stats
+         In the stats page there is a button if you click on that that will connect your metamask extension on your browser and the get the wallet address.
+         By using the wallet address we can fetch the latest 5 transactions
+         In the bottom right the etherium block height will change every 3000ms
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Reference
+   - Google calender (https://developers.google.com/calendar/api)
