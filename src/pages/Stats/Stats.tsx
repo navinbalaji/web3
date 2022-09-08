@@ -19,8 +19,7 @@ const Stats = () => {
 
   const blockHeightAPIKey = process.env.REACT_APP_BLOCK_HEIGHT_API_KEY as string;
 
-  // I am taking the public wallet address 
-  const publicWalletAddress = process.env.REACT_APP_PUBLIC_WALLET_ADDRESS as string;
+  const publicWalletAddress = useAppSelector((state) => state.metamaskSlice.address);
 
   const { data, isLoading } = useGetBlockHeightByApiQuery(blockHeightAPIKey, {
     pollingInterval: 3000,
@@ -33,7 +32,7 @@ const Stats = () => {
       dispatch(setBlockHeight(data?.data.items[0].height));
     }
     if (transactionalData.isSuccess) {
-      dispatch(setTransaction(transactionalData.data?.result));
+           dispatch(setTransaction(transactionalData.data?.result || []));
     }
   }, [transactionalData, data, dispatch]);
 
