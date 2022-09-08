@@ -22,7 +22,8 @@ export default function CustomTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {transaction?.map((tran: any, index: number) => (
+         {transaction.length > 0 &&
+            transaction?.map((tran: any, index: number) => (
             <TableRow key={index} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
               <TableCell component="th" scope="row">
                 {tran.address}
