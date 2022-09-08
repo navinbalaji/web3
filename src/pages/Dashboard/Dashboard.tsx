@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   const config: googleCalenderConfig = {
     clientId: process.env.REACT_APP_GOOGLE_CALENDER_CLIENT_ID as string,
-    apiKey: process.env.REACT_APP_GOOGLE_CALENDER_API_KE as string,
+    apiKey: process.env.REACT_APP_GOOGLE_CALENDER_API_KEY as string,
     scope: GOOGLE_API_SCOPE,
     discoveryDocs: [GOOGLE_API_DISCOVERY_DOCS],
   };
