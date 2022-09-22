@@ -1,7 +1,5 @@
 # WEB3 
 
-## Deployed : click on the link (https://web3-samudai.netlify.app)
-
 ## _Installation_
 - git clone [Link text Here](https://github.com/navinbalaji/web3)
 - Run npm install
